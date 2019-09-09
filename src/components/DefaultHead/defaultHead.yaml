@@ -1,0 +1,11 @@
+title: Elixir Sydney
+defaultImage: https://camunda.com/img/events/meetup-example.jpg
+description: Elixir Sydney is a regular meetup where developers meet to talk and learn about all things Elixir.
+siteUrl: https://elixir-sydney-gatsby.netlify.com
+location: 
+  name: Expert360
+  streetAddress: Level 3, 14 Martin Place
+  city: Sydney
+  latitude: -33.868015
+  longitude: 151.204998
+

@@ -1,0 +1,8 @@
+subHeading1: "Next Meetup:"
+subHeading2: "Join this Event:"
+iconButton:
+  buttonText: Sign up on Meetup
+  buttonHref: https://www.meetup.com/en-AU/elixir-sydney/events/kznqrpyzfbjb/
+  buttonImage: meetup.svg
+  buttonIconName: meetup
+  buttonIconPrefix: fab
