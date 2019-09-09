@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { PageLayout } from "../components"
+import { Footer } from "../../components"
 
 export default () => {
-  return <PageLayout />
+  return <Footer />
 }

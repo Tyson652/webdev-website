@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Styled } from "theme-ui";
 
-export const FooterComplete = () => (
-  <FooterLinkGroup>
+export const FooterLinkGroup = () => (
+  <FooterComplete>
     <FooterLinkList>
       <Heading>Resources</Heading>
       <FooterLink href="#guides">Guides</FooterLink>
@@ -27,7 +27,7 @@ export const FooterComplete = () => (
       <FooterLink href="#docs">Docs</FooterLink>
       <FooterLink href="#source">Source</FooterLink>
     </FooterLinkList>
-  </FooterLinkGroup>
+  </FooterComplete>
 );
 
 const Heading = ({ children }) => (
@@ -46,7 +46,7 @@ const Heading = ({ children }) => (
   </Styled.p>
 );
 
-const FooterLinkGroup = ({ children }) => (
+const FooterComplete = ({ children }) => (
   <Flex
     sx={{
       flexWrap: "wrap",

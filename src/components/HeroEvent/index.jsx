@@ -4,7 +4,7 @@ import { IconButton } from "../buttons/index"
 import HeroEventYaml from "./heroEventYaml.yaml"
 import { Logo } from "../Logo"
 
-export const HeroEventMeetup = ({
+export const HeroEvent = ({
   heading,
   date,
   children,

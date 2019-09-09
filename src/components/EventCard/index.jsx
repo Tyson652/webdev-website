@@ -11,7 +11,7 @@ export const EventCard = ({
   image,
   description
 }) => {
-  if (image === "null") {
+  if (image === undefined) {
     image = EventCardYaml.defaultImage;
   }
   return (

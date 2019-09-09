@@ -1,7 +1,7 @@
-import * as fontawesome from "@fortawesome/fontawesome";
+// import * as fontawesome from "@fortawesome/fontawesome";
 
-import * as faWindows from "@fortawesome/free-regular-svg-icons";
+// import * as faWindows from "@fortawesome/free-regular-svg-icons";
 
-export default {
-  init: () => fontawesome.library.add(faWindows)
-};
+// export default {
+//   init: () => fontawesome.library.add(faWindows)
+// };
