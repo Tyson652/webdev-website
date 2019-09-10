@@ -22,4 +22,5 @@ export * from "./SocialIcon";
 export * from "./PaginationButtons";
 export * from "./Head";
 export * from "./DefaultHead";
+export * from "./Logo"
 

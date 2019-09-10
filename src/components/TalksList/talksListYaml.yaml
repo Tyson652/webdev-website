@@ -2,3 +2,32 @@ title: Talks
 email: elixirsydney@gmail.com
 line1: Submit a Talk Proposal
 line2: "Send submissions to "
+talks:
+  - title: Elixir Downunder
+    description: In a format we've blatantly stolen borrowed from the end of year Cocoaheads trivia festival, we'll be throwing random questions at you which will stretch your noodles and maybe even teach you some interesting facts about Elixir or Erlang. Or maybe just programming in general.
+    photos: https://alembic.com.au/static/dc946a1017e0665fccf2bd98abd98a67/c9121/elixir-sydney-july.jpg
+    slides: https://speakerdeck.com/joshprice/elixir-performance-tuning
+    video: https://www.youtube.com/watch?v=xTUK3uhFnlU
+    speaker:
+      id: josh-price
+      name: Josh Price
+      avatarUrl: https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/4/5/c/e/member_12197870.jpeg
+      meetupUrl: https://www.meetup.com/en-AU/sydney-ex/members/8425371/
+      websiteUrl: 
+      twitter: "@joshprice"
+      company: Alembic
+      companyUrl: https://alembic.com.au/
+  - title: Upgrading to Ecto 3
+    description: In a format we've blatantly stolen borrowed from the end of year Cocoaheads trivia festival, we'll be throwing random questions at you which will stretch your noodles and maybe even teach you some interesting facts about Elixir or Erlang. Or maybe just programming in general.
+    photos: https://alembic.com.au/static/dc946a1017e0665fccf2bd98abd98a67/c9121/elixir-sydney-july.jpg
+    slides: https://speakerdeck.com/joshprice/elixir-performance-tuning
+    video: https://www.youtube.com/watch?v=xTUK3uhFnlU
+    speaker:
+      id: james-sadler
+      name: James Sadler
+      avatarUrl: https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/2/8/f/b/member_258850491.jpeg
+      meetupUrl:
+      websiteUrl:
+      twitter: "@freshtonic"
+      company: Alembic
+      companyUrl: https://alembic.com.au/

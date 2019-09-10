@@ -5,9 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import PaginationButtonsYaml from "./paginationButtonsYaml.yaml"
 
 export const PaginationButtons = ({ pageContext }) => {
-  const { previous, next } = pageContext
+  let previous = "test";
+  let next = null;
+  if (pageContext) {
+    previous = pageContext.previous
+    next = pageContext.next
+  }
   const displayPrevious = previous === null ? "none" : "inline-block"
-  const previousPath = previous === null ? "none" : previous.frontmatter.path
+  const previousPath = previous === null ? "none" : "test"
+  // const previousPath = previous === null ? "none" : previous.frontmatter.path
   const displayNext = next === null ? "none" : "inline-block"
   const nextPath = next === null ? "none" : next.frontmatter.path
 

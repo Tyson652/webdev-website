@@ -3,7 +3,7 @@ import { jsx, Box, Flex, Styled, Container } from "theme-ui"
 import OrganisersRowYaml from "./organisersRowYaml.yaml"
 import { Avatar } from "../Avatar"
 
-export const OrganisersRow = ({ people }) => {
+export const OrganisersRow = () => {
   return (
     <Container>
       <Box sx={{ width: "100%", marginTop: [24, 0, 0] }}>
@@ -21,7 +21,7 @@ export const OrganisersRow = ({ people }) => {
               alignItems: "center",
             }}
           >
-            {people.map((person, i) => (
+            {OrganisersRowYaml.people.map((person, i) => (
               <PersonBox key={i}>
                 <Avatar size="small" image={person.avatarUrl} />
                 <TextBox>

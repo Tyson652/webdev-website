@@ -2,7 +2,7 @@
 import { jsx, Box, Styled, Flex, Container } from "theme-ui"
 import SponsorsRowYaml from "./sponsorsRowYaml.yaml"
 
-export const SponsorsGroup = ({ sponsors }) => {
+export const SponsorsRow = () => {
   return (
     <Container>
       <Flex
@@ -23,7 +23,7 @@ export const SponsorsGroup = ({ sponsors }) => {
             flexWrap: "wrap",
           }}
         >
-          {sponsors.map((sponsor, i) => (
+          {SponsorsRowYaml.sponsors.map((sponsor, i) => (
             <Box key={i} sx={{ minWidth: "33.3%" }}>
               <Styled.a href={sponsor.websiteUrl}>
                 <Styled.img

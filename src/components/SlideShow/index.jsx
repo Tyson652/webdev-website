@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import SlideShowYaml from "./slideShowYaml.yaml"
 
 export const SlideShow = ({ imageUrls }) => {
+  console.log(imageUrls)
   const [index, setIndex] = useState(0)
   let images = undefined
-  if (imageUrls === null) {
+  if (imageUrls === null || imageUrls === undefined) {
     images = [SlideShowYaml.defaultImage]
   } else {
     images = imageUrls.map(

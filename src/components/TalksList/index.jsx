@@ -3,8 +3,9 @@ import { jsx, Box, Styled, Flex, Container } from "theme-ui"
 import TalksListYaml from "./talksListYaml.yaml"
 import { Talk } from "../Talk/index"
 
-export const TalksList = ({ talks }) => {
-  const { title, line1, line2, email } = TalksListYaml.talks
+export const TalksList = () => {
+  const { title, line1, line2, email } = TalksListYaml
+  console.log(TalksListYaml)
   return (
     <Flex
       sx={{
@@ -16,8 +17,9 @@ export const TalksList = ({ talks }) => {
         <Box sx={{ marginTop: 24 }}>
           <Heading>{title}</Heading>
           <Box>
-            {talks &&
-              talks.map((talk, index) => <Talk key={index} {...talk} />)}
+            {TalksListYaml.talks.map((talk, index) => (
+              <Talk key={index} {...talk} />
+            ))}
             <EmailActionBox>
               <Title>{line1}</Title>
               <SecondaryTitle>

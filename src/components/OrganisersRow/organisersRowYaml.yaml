@@ -1,1 +1,18 @@
 organisersTitle: Organisers
+people:
+  - id: josh-price
+    name: Josh Price
+    avatarUrl: https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/4/5/c/e/member_12197870.jpeg
+    meetupUrl: https://www.meetup.com/en-AU/sydney-ex/members/8425371/
+    websiteUrl: 
+    twitter: "@joshprice"
+    company: Alembic
+    companyUrl: https://alembic.com.au/
+  - id: james-sadler
+    name: James Sadler
+    avatarUrl: https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/2/8/f/b/member_258850491.jpeg
+    meetupUrl:
+    websiteUrl:
+    twitter: "@freshtonic"
+    company: Alembic
+    companyUrl: https://alembic.com.au/   

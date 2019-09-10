@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Styled } from "theme-ui";
-import { MDXRenderer } from "gatsby-plugin-mdx";
+// import { MDXRenderer } from "gatsby-plugin-mdx";
 import NextEventYaml from "./nextEventYaml.yaml"
 
 export const NextEvent = ({
@@ -54,9 +54,9 @@ export const NextEvent = ({
               flexDirection: "column"
             }}
           >
-            <MDXRenderer components={null} scope={null}>
+            {/* <MDXRenderer components={null} scope={null}> */}
               {body}
-            </MDXRenderer>
+            {/* </MDXRenderer> */}
           </Flex>
         </Flex>
       </Flex>
