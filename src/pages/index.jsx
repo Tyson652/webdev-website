@@ -7,19 +7,41 @@ import { HeaderNav } from "../components"
 export default () => {
   let links = [
     { description: "Avatar", href: "/component-libray/avatar/" },
-    { description: "Footer", href: "/component-libray/footer/" },
+    { description: "Banner", href: "/component-libray/banner/" },
     { description: "EventCard", href: "/component-libray/eventCard/" },
+    { description: "Footer", href: "/component-libray/footer/" },
+    { description: "FooterLinkGroup", href: "/component-libray/footerLinkGroup/" },
+    { description: "HeaderNav", href: "/component-libray/headerNav/" },
+    { description: "HeroEvent", href: "/component-libray/heroEvent/" },
+    { description: "IconButton", href: "/component-libray/iconButton/" },
+    { description: "LinkIcon", href: "/component-libray/linkIcon/" },
+    { description: "Logo", href: "/component-libray/logo/" },
+    { description: "Map", href: "/component-libray/map/" },
+    { description: "MapDescription", href: "/component-libray/mapDescription/" },
+    { description: "NextEvent", href: "/component-libray/nextEvent/" },
+    { description: "OrganiserRow", href: "/component-libray/organisersRow/" },
+    { description: "PageInformation", href: "/component-libray/pageInformation/" },
+    { description: "PageLayout", href: "/component-libray/pageLayout/" },
+    { description: "PaginationButtons", href: "/component-libray/paginationButtons/" },
+    { description: "Quote", href: "/component-libray/quote/" },
+    { description: "SlideShow", href: "/component-libray/slideShow/" },
+    { description: "SocialIcon", href: "/component-libray/socialIcon/" },
+    { description: "SponsorsRow", href: "/component-libray/sponsorsRow/" },
+    { description: "TalksList", href: "/component-libray/talksList/" },
   ]
 
-  let componentHref = "/component-libray/avatar/"
   const [component, setComponent] = useState("/component-libray/avatar/")
 
   const toggleComponent = href => {
     console.log(href)
-    // setComponent(href)
+    setComponent(href)
     return component
   }
-  // console.log(componentHref)
+
+  const [windowHeight, setWindowHeight] = useState(document.documentElement.clientHeight - 77)
+  window.onresize = () => {
+    setWindowHeight(document.documentElement.clientHeight - 77)
+  }
 
   const BurgerLink = ({ children }) => (
     <Box
@@ -62,7 +84,7 @@ export default () => {
         />
         <HeaderNav />
         <Flex>
-          <Box sx={{ width: 400, height: 600 }}>
+          <Box sx={{ width: 300, height: windowHeight, overflow: 'scroll' }}>
             <Flex
               sx={{
                 width: "100%",
@@ -78,7 +100,7 @@ export default () => {
                     key={i}
                     href={link.href}
                     sx={{ textDecoration: "none" }}
-                    onClick={toggleComponent.bind(link.href)}
+                    onClick={() => toggleComponent(link.href)}
                   >
                     <BurgerLink>{link.description}</BurgerLink>
                   </Box>
@@ -86,7 +108,7 @@ export default () => {
               })}
             </Flex>
           </Box>
-          <iframe src={component} width="500px" height="600px" />
+          <iframe src={component} width="500px" height={windowHeight} />
         </Flex>
       </Layout>
     </Styled.root>
