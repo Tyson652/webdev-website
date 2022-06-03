@@ -18,7 +18,7 @@
     "@types/react-helmet": "^5.0.9",
     "@types/styled-components": "^4.1.18",
     "gatsby": "^2.6.0",
-    "gatsby-plugin-mdx": "^1.0.4",
+    "gatsby-plugin-mdx": "^2.14.1",
     "gatsby-plugin-theme-ui": "^0.2.0",
     "gatsby-source-filesystem": "^2.1.21",
     "gatsby-transformer-yaml": "^2.2.8",
